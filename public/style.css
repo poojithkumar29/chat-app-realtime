@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f1f1f1;
+    animation: fadeInBody 2s ease;
+}
+
+@keyframes fadeInBody {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+    color: gold;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+#messages {
+    list-style: none;
+    padding: 20px;
+    width: 400px;
+    height: 300px;
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid gold;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+#messages li {
+    list-style: none;
+    margin-bottom: 12px;
+    word-wrap: break-word;
+}
+
+.msg-container {
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 75%;
+    display: inline-block;
+    animation: fadeIn 0.3s ease forwards;
+    background: #1e1e1e;
+}
+
+.mine {
+    background-color: #0078d4;
+    color: #ffffff !important;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.theirs {
+    background-color: #2b2b2b;
+    margin-right: auto;
+}
+
+.username {
+    font-size: 13px;
+    color: #f1f1f1;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.text {
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.time {
+    display: inline-block;
+    font-size: 11px;
+    color: #aaaaaa;
+    margin-left: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+form {
+    display: flex;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    font-size: 16px;
+}
+
+button {
+    background-color: gold;
+    color: #222;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #ffd700;
+    box-shadow: 0 0 10px #ffd700;
+}
